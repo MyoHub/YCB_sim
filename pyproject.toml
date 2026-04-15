@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ycb-sim"
+version = "0.1.0"
+description = "YCB simulation XML, mesh, and texture assets for MyoSuite."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "myolab" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/myolab/YCB_sim"
+Repository = "https://github.com/myolab/YCB_sim"
+
+[tool.setuptools]
+packages = ["ycb_sim"]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+ycb_sim = "."
+
+[tool.setuptools.package-data]
+ycb_sim = ["**/*"]
